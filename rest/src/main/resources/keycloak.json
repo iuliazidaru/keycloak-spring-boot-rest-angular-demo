@@ -1,0 +1,9 @@
+{
+  "realm": "rest-demo",
+  "realm-public-key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/ANfeYkQkr+9zspuADyuaDAipN/nyBKMZ4D9cueNsAIma/ffnECb5r6nrUelTqCaBi3w8qS33RgsNH97Nyi6lJovpNogqFZFeGrI48WYwTpWjlfRbrC58+b3QsKPqG9wmQXtI6Iexe28vgOLuTnW0vL60BIZ3nsKRT/oTxngBaQIDAQAB",
+  "bearer-only": true,
+  "ssl-required": "external",
+  "resource": "rest-hello-world",
+  "enable-cors": true
+  
+}

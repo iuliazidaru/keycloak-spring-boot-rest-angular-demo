@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Angular Product Portal</title>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="lib/angular/ui-bootstrap-tpls-0.4.0.js"></script>
+
+    <script src="http://localhost:8080/auth/js/keycloak.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</head>
+
+<body data-ng-controller="GlobalCtrl">
+
+<div id="content-area" class="col-md-9" role="main" data-ng-controller="GlobalAuthCtrl">
+    <div id="content">
+        <a href="" ng-click="login()" ng-hide="auth.loggedIn" >Sign in/Register</a>
+        <a href="" ng-click="logout()" ng-show="auth.loggedIn">Sign Out</a>
+        <button type="submit" ng-show="auth.authz.hasRealmRole('user')" data-ng-click="reloadData()">Reload</button>
+        <b>{{message.content}}</b>
+        <div>{{auth.username}}</div>
+        <div>{{auth.loggedIn}}</div>
+    </div>
+</div>
+</body>
+</html>
